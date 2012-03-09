@@ -1,0 +1,163 @@
+/* Most of this design is blatantly stolen from the awesome http://handlebarsjs.com/ website. */
+body
+{
+   background-color: #F15A24;
+   background-image: radial-gradient(50% 0%, circle, #F7931E 0px, #F15A24 750px);
+   background-image: -webkit-radial-gradient(50% 0%, circle, #F7931E 0px, #F15A24 750px);
+   background-image: -moz-radial-gradient(50% 0%, circle, #F7931E 0px, #F15A24 750px);
+   background-repeat: no-repeat;
+
+   font-family: Arial, sans-serif;
+   color: #fee;
+
+   margin: 0;
+   padding: 0;
+
+   border-bottom: 1px solid #F7931E;
+}
+
+a
+{
+   color: #F7931E;
+   text-decoration: none;
+}
+
+/* Style header text */
+header
+{
+   text-align: center;
+   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+header h1
+{
+   font-size: 300%;
+   margin: 0.5em 0;
+}
+header a
+{
+   color: inherit;
+}
+
+/* Position nav and main content */
+nav
+{
+   float: left;
+   width: 15%;
+   margin-left: 10%;
+   margin-right: 5%;
+}
+#main
+{
+   float: right;
+   width: 60%;
+   margin-right: 10%;
+}
+
+/* Style navigation links and blog posts similarly */
+nav a, article, .content
+{
+   background-color: #fee;
+
+   padding: 0.5em 1em;
+   margin: 1em 0;
+
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+   -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Style nav links */
+nav ul, nav li
+{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+nav a
+{
+   display: block;
+
+   text-decoration: none;
+   text-align: center;
+   font-weight: bold;
+}
+nav a:hover
+{
+   background-color: #F7931E;
+   color: inherit;
+   box-shadow: inset -2px 0px 10px 0 rgba(0, 0, 0, 0.5);
+   -webkit-box-shadow: inset -2px 0px 10px 0 rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: inset -2px 0px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Style blog posts and main content */
+#main h2
+{
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+article, .content
+{
+   color: black;
+}
+article .post-time
+{
+   font-size: small;
+   color: #888;
+}
+
+/* Style archive pages */
+.archives li a, .prev-month, .next-month
+{
+   font-size: 1.25em;
+   font-weight: bold;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+   color: inherit;
+}
+.archives li
+{
+   margin: 1em 0;
+}
+.prev-month
+{
+   float: left;
+}
+.prev-month:before
+{
+   /* Insert a left arrow */
+   content: "\2190";
+}
+.next-month
+{
+   float: right;
+}
+.next-month:after
+{
+   /* Insert a right arrow */
+   content: "\2192";
+}
+
+/* Style footer text */
+footer
+{
+   clear: both;
+   text-align: center;
+   font-size: small;
+   color: rgba(0, 0, 0, 0.3);
+   padding: 1em 0;
+}
+
+/* Media queries */
+@media (max-width: 480px)
+{
+   /* Reosition nav and main content */
+   nav, #main
+   {
+      float: none;
+      width: 90%;
+      margin: 1em 5%;
+   }
+}
