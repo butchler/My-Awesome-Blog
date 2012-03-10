@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-   <head>
-      <title>My Awesome Blog - Some topic</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <base href="/My-Awesome-Blog/">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
-   </head>
-
-   <body>
-
-      <header>
-         <h1><a href="index.html">My Awesome Blog</a></h1>
-         <span class="subtitle">A blog about being awesome</span>
-      </header>
-
-      <nav>
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="archive/index.html">Archive</a></li>
-         </ul>
-      </nav>
-
-      <section id="main">
+<?php include '../includes/before.html'; ?>
          <article>
-            <h3 class="post-title"><a href="post/some-topic.html">Some topic</a></h3>
+            <h3 class="post-title"><a href="post/some-topic.php">Some topic</a></h3>
 
             <p class="post-time">Posted <time datetime="2011-12-05">December 5, 2011</time></p>
 
@@ -47,12 +20,4 @@
                <p>Wow, that was a really long blog post!</p>
             </div>
          </article>
-      </section>
-
-      <footer>
-         &copy;2012 Somebody Awesome
-      </footer>
-
-   </body>
-
-</html>
+<?php include '../includes/after.html'; ?>
