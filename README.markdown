@@ -72,7 +72,7 @@ will become:
 
 Assuming that the `$title` variable has been set like in the above code, this code will set the `<title>` to "My Awesome Blog - <title of page>". Now you can go through all of the pages and set their `$title` appropriately.
 
-A lot of the pages also display the title of the page as an <h2> in the actual content of the page, though, so now that the title is stored in the `$title` variable, you can use that to shorten up the code a little bit. You can remove the lines that were like this:
+A lot of the pages also display the title of the page as an `<h2>` in the actual content of the page, though, so now that the title is stored in the `$title` variable, you can use that to shorten up the code a little bit. You can remove the lines that were like this:
 
 ```php
 <h2>Title of Page</h2>
