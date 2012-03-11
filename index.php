@@ -1,6 +1,8 @@
-<?php include './includes/before.html'; ?>
-         <h2>Recent Posts</h2>
+<?php
+$title = 'Recent Posts';
 
+include './includes/before.php';
+?>
          <article>
             <h3 class="post-title"><a href="post/its-been-a-while.php">It's been a while...</a></h3>
 

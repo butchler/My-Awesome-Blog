@@ -1,6 +1,8 @@
-<?php include '../../includes/before.html'; ?>
-         <h2>Posts from December 2011</h2>
+<?php
+$title = 'Posts from December 2011';
 
+include '../../includes/before.php';
+?>
          <article>
             <h3 class="post-title"><a href="post/first-post.php">First post!</a></h3>
 

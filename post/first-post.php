@@ -1,4 +1,8 @@
-<?php include '../includes/before.html'; ?>
+<?php
+$title = 'First post!';
+
+include '../includes/before.php';
+?>
          <article>
             <h3 class="post-title"><a href="post/first-post.php">First post!</a></h3>
 

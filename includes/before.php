@@ -2,7 +2,7 @@
 <html>
 
    <head>
-      <title>My Awesome Blog</title>
+      <title>My Awesome Blog - <?php echo $title; ?></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
       <base href="/My-Awesome-Blog/">
@@ -26,3 +26,5 @@
       </nav>
 
       <section id="main">
+         <h2><?php echo $title; ?></h2>
+

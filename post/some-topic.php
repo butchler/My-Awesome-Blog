@@ -1,4 +1,8 @@
-<?php include '../includes/before.html'; ?>
+<?php
+$title = 'Some topic';
+
+include '../includes/before.php';
+?>
          <article>
             <h3 class="post-title"><a href="post/some-topic.php">Some topic</a></h3>
 
