@@ -40,13 +40,13 @@ Version 3 - Page-specific Variables
 
 So now we've fixed the issue with the layout HTML being duplicated everywhere, but there's one problem: in order to fix that problem, I had to sacrifice the page titles. Before, each page had a different `<title>` tag, specific to that page, like `<title>My Awesome Blog - About</title>` for the about page, `<title>My Awesome Blog - Archives</title>` for the archives page, and so on. But now, because each page is including the before.html file and because before.html just sets the `<title>` to My Awesome Blog, all of the page have the same title. In this case, it's not a very big issue, but it would still be nice to fix, and in a more complicated project you might need to do something similar if you have certain information that is different for each page.
 
-In order to fix this, I'm going to replace this line of code:
+In order to fix this, I'm going to replace this line that was at the beginning of each file:
 
 ```php
 <?php include 'path/to/includes/before.html'; ?>
 ```
 
-that was at the beginning of each file with this code:
+with this:
 
 ```php
 <?php
@@ -60,7 +60,7 @@ In PHP, all variables begin with the `$` character, so all I've done is set a va
 
 This line in before.php:
 
-```php
+```
 <title>My Awesome Blog</title>
 ```
 
@@ -70,11 +70,11 @@ will become:
 <title>My Awesome Blog - <?php echo $title; ?></title>
 ```
 
-Assuming that the `$title` variable has been set like in the above code, this code will set the `<title>` to "My Awesome Blog - <title of page>". Now you can go through all of the pages and set their `$title` appropriately.
+Assuming that the `$title` variable has been set like in the above code, this code will set the `<title>` to "My Awesome Blog - Title of Page". Now you can go through all of the pages and set their `$title` appropriately.
 
 A lot of the pages also display the title of the page as an `<h2>` in the actual content of the page, though, so now that the title is stored in the `$title` variable, you can use that to shorten up the code a little bit. You can remove the lines that were like this:
 
-```php
+```
 <h2>Title of Page</h2>
 ```
 
