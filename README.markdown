@@ -1,7 +1,7 @@
 My Awesome Blog
 ===============
 
-This is a (currently in progress) project to teach my friend how to create a simple blog using HTML, CSS, and PHP. You can check out how the simple blog looks [here](http://butchler.github.com/My-Awesome-Blog/) and view the [commit history](http://github.com/butchler/My-Awesome-Blog/commits/master) or the tags to see how the project evolves from simple/naive implementations up to a full blog system.
+This is a (currently in progress) project to teach my friend how to create a simple blog using PHP and MySQL. You can check out how the simple blog looks [here](http://butchler.github.com/My-Awesome-Blog/) and view the [commit history](http://github.com/butchler/My-Awesome-Blog/commits/master) or the tags to see how the project evolves from simple/naive implementations up to a full blog system. The goal is that, by doing it this way, it will be very clear why things are done the way they are in the final product.
 
 Version 1 - Static HTML
 -----------------------
@@ -35,6 +35,8 @@ In order to get the site working with these changes, you'll need to either uploa
 
 Version 3 - Page-specific Variables
 -----------------------------------
+
+[(Browse Source)](http://github.com/butchler/My-Awesome-Blog/tree/version3-page-specific-variables)
 
 So now we've fixed the issue with the layout HTML being duplicated everywhere, but there's one problem: in order to fix that problem, I had to sacrifice the page titles. Before, each page had a different `<title>` tag, specific to that page, like `<title>My Awesome Blog - About</title>` for the about page, `<title>My Awesome Blog - Archives</title>` for the archives page, and so on. But now, because each page is including the before.html file and because before.html just sets the `<title>` to My Awesome Blog, all of the page have the same title. In this case, it's not a very big issue, but it would still be nice to fix, and in a more complicated project you might need to do something similar if you have certain information that is different for each page.
 
