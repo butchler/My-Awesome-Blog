@@ -1,14 +1,16 @@
 My Awesome Blog
 ===============
 
-This is a (currently in progress) project to teach my friend how to create a simple blog using PHP and MySQL. You can check out how the simple blog looks [here](http://butchler.github.com/My-Awesome-Blog/) and view the [commit history](http://github.com/butchler/My-Awesome-Blog/commits/master) or the tags to see how the project evolves from simple/naive implementations up to a full blog system. The goal is that, by doing it this way, it will be very clear why things are done the way they are in the final product.
+This is a (currently in progress) project to teach my friend how to create a simple blog using PHP and MySQL. You can check out how the simple blog looks [here](http://butchler.github.com/My-Awesome-Blog/) and view the branches to see how the project evolves from naive implementations (such as writing the entire blog in straight HTML) up to a simple blog system. The goal is that, by doing it incrementally like this, it will be very clear why things are done the way they are in the final product.
+
+This project is meant for people who already have some programming knowledge and understand HTML, but want to learn more about server-side web development. That being said, I am not an expert at server-side web development at all, so any suggestions/criticisms are welcome!
 
 Version 1 - Static HTML
 -----------------------
 
 [(Browse Source)](http://github.com/butchler/My-Awesome-Blog/tree/version1-static-html)
 
-The first version just uses static HTML and CSS files. However, all of the content that will be on the website is already there. Nothing about the HTML should really change after this point, only how the HTML is generated.
+The first version just uses static HTML and CSS files. However, all of the content that will be on the website is already there. Nothing about the HTML should really change after this point, only how the HTML is generated. You can see how the site looks here: http://butchler.github.com/My-Awesome-Blog/
 
 There are three main pages on the website: the home page, the archives page, and the about page. The home page lists the posts from the most recent month that actually has any posts. The archives page just has a list of links, one link for each month in which posts were posted to the blog (December 2011, February 2012, etc.). Each month page just shows all of the blog posts that were posted in that month. Finally, the about page is just a static page with some information about the blog.
 
