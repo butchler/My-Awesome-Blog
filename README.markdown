@@ -85,3 +85,16 @@ from each of the pages and instead have that line appear only once in before.php
          <h2><?php echo $title; ?></h2>
 ```
 
+###Planned Versions
+
+* Version 4 - Multiple Layouts
+* Version 5 - Automatic Archiving
+* Version 6 - Using a Database
+* Version 7 - Pretty URLs
+* Version 8 - Admin Interface
+* Version 9 - User Authentication
+* Extra - Markdown Filter
+* Extra - Comments
+* Extra - Model-View-Controller
+* Extra - AJAX
+
